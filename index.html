@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Graduate Employment Analytics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: system-ui, Arial; max-width: 980px; margin: 24px auto; }
+    h1 { display:flex; gap:10px; align-items:center; }
+    input, textarea { width: 100%; padding: 10px; }
+    .row { display:flex; gap:8px; }
+    button { padding: 10px 16px; cursor: pointer; }
+    #chips { margin: 8px 0; display:flex; flex-wrap: wrap; gap:6px; }
+    .chip { padding: 6px 10px; border: 1px solid #ddd; border-radius: 16px; cursor:pointer; }
+    .answer { margin-top: 16px; white-space: pre-wrap; }
+    img { max-width: 100%; }
+  </style>
+</head>
+<body>
+  <h1>🎓 Graduate Employment Analytics</h1>
+  <div class="row">
+    <input id="q" placeholder="Ask anything (e.g., Which state had the highest mean salary last year?)" />
+    <button id="ask">Ask</button>
+  </div>
+  <label><input type="checkbox" id="use_web" /> Use web context</label>
+  <div id="chips"></div>
+  <div class="answer" id="ans"></div>
+  <script src="app.js"></script>
+</body>
+</html>
